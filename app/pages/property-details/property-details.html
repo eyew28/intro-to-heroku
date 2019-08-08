@@ -33,6 +33,12 @@
                     <h3>Asking Price</h3>
                     <ion-note item-right>{{property.priceFormatted}}</ion-note>
                 </ion-item>
+                <ion-item>
+                    <ion-icon item-left name="cube"></ion-icon>
+                    <h3>3D Model</h3>
+                    <a href="house/house.html"></a>
+                </ion-item>
+
                 <button ion-item (click)="showBroker($event, property.broker)">
                     <ion-avatar item-left>
                         <img src="{{property.broker.picture}}"/>
@@ -46,12 +52,6 @@
                     <button clear small (click)="favorite($event, property)">
                         <ion-icon name="star"></ion-icon>
                         Favorite
-                    </button>
-                </ion-col>
-                <ion-col>
-                    <button clear small href="house/house.html">
-                        <ion-icon name="cube"></ion-icon>
-                        3D Model
                     </button>
                 </ion-col>
                 <ion-col text-center>
